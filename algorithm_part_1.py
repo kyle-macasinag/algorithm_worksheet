@@ -30,12 +30,10 @@
 
 # Number 3:
 def scrambler(word):
-
+    final_result = ""
     for letter in word:
-        letter_list = [letter]
-        print(letter_list)
-        indexes = len(word)
-        print(indexes)
+        final_result.append(letter)
+        print(final_result)
 pass
 
 scrambler("devCodeCamp")
