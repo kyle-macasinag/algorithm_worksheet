@@ -29,38 +29,61 @@
 
 
 # Number 3:
-# def scrambler(word):
-#     for letter in word:
-#         letter
-    
-#     for letter in word:
-#         letter_list = [letter]
-#         print(letter_list)
-#         indexes = len(word)
-#         print(indexes)
-# pass
+def scrambler(word):
 
-# scrambler("devCodeCamp")
+    for letter in word:
+        letter_list = [letter]
+        print(letter_list)
+        indexes = len(word)
+        print(indexes)
+pass
+
+scrambler("devCodeCamp")
 
 
 
 #Number 4:
 
-def search_ingredient(ingredients):
-    search = input("What would you like to find today?")
-    for item in ingredients:
-             print(search)
-             print(item)
-             if search == item:
-                 print("Hooray!")
-                 return item
-    else:
-        try_again = input("Sorry, we couldn't find what you were looking for.  Would you like to try again?")
-        if try_again == "Y":
-            search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"])
-        if try_again != "Y":
-            print("Thank you for shopping with us!")
+# def search_ingredient(ingredients):
+#     search = input("What would you like to find today?")
+#     for item in ingredients:
+#              print(search)
+#              print(item)
+#              if search == item:
+#                  print("Hooray!")
+#                  return item
+#     else:
+#         try_again = input("Sorry, we couldn't find what you were looking for.  Would you like to try again? Y/N")
+#         if try_again == "Y":
+#             search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"])
+#         if try_again != "Y":
+#             print("Thank you for shopping with us!")
             
 
 
-print(search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"]))
+# (search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"]))
+
+
+# Number 5:
+
+# def reversal(insertion):
+#     inverse = ""
+#     for entry in range(len(insertion)-1,-1,-1):
+#         inverse += insertion[entry]
+#     print(inverse)
+        
+
+#     pass
+
+# reversal(["red", "blue", "green", "yellow", "black"])
+
+
+#Number 6:
+# def four_and_up(names):
+#     for name in names:
+#         if 
+
+
+# pass
+
+# four_and_up(["Nicholas II", "Wilhelm II", "Zog", "Thordan", "Ciaphas", "Bob"])
