@@ -47,21 +47,20 @@
 #Number 4:
 
 def search_ingredient(ingredients):
+    search = input("What would you like to find today?")
     for item in ingredients:
-             search = input("What would you like to find today?")
              print(search)
              print(item)
              if search == item:
+                 print("Hooray!")
                  return item
-             elif search != item:
-                 feedback = input("Apologies, nothing came up. Would you like to try agin? Y/N:")
-                 if feedback == "Y":
-                     print("Let's try again!")
+    else:
+        try_again = input("Sorry, we couldn't find what you were looking for.  Would you like to try again?")
+        if try_again == "Y":
+            search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"])
+        if try_again != "Y":
+            print("Thank you for shopping with us!")
+            
 
-                 elif feedback != "Y":
-                     print("Have a nice day!")
-                     quit
 
-
-   
-search_ingredient()
+print(search_ingredient(["Eggs", "Butter", "Onions", "Cream", "Ketchup"]))
