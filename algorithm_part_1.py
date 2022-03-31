@@ -32,8 +32,9 @@
 def scrambler(word):
     final_result = ""
     for letter in word:
-        final_result.append(letter)
-        print(final_result)
+        index_number = str(word.index(letter))
+        together = letter + index_number + final_result
+        print(together)
 pass
 
 scrambler("devCodeCamp")
